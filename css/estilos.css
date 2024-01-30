@@ -1,0 +1,591 @@
+:root{
+    --tamanho-fonte-contato-md:2rem
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* HEADER */
+
+header{
+    /* border: 3px solid red; */
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #184e77;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header div.logo{
+    border: 2px solid blue; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15rem;
+}
+header div.logo span{
+    font-size: 3rem;
+}
+header div.logo img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #6366f1;
+}
+
+header nav{
+    border: 3px solid rgb(255, 219, 12);
+    width: 70vw;
+    color: white;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+
+   list-style: none;
+  
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+header nav ul li a img{
+    height: 5vh;
+    min-height: 30px;
+}
+
+
+header div#menu-hamburguer{
+    height: 100%; 
+    display: none;
+    
+
+}
+header div#menu-hamburguer img{
+    height: 80%;
+}
+
+
+.menu-hamburguer-ativo{
+    
+}
+.menu-hamburguer-fechado{
+    display: none;
+}
+
+/* BANNER PRINCIPAL */
+
+section.banner{
+    /* background-color: rgb(210, 206, 206); */
+    background-color: #f5f5f5;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+section.banner .banner_texto{ 
+   height: 100%;  
+   max-width: 500px;
+   
+   /* background-color: rgb(16, 130, 244);  */
+    color: black;
+   flex-basis: 50vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+ border: 3px solid blueviolet;
+  padding-left: 5vh;
+
+}
+section.banner .banner_texto h1{
+  font-size: 3rem;
+  color: #246ea7;
+  font-weight: bold;
+ 
+}
+section.banner .banner_texto h2{
+    font-size: 2rem;
+}
+section.banner .banner_texto p{
+    font-size: 1.8rem;
+}
+section.banner .banner_texto div.container-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid green;
+
+    margin-top: 40px;
+
+    width: 100%;
+   
+    min-height: min-content;
+}
+section.banner .banner_texto div.container-links a#link_sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #246ea7;   
+    min-width:min-content ;
+    /* max-width: 200px; */
+    height: 7vh;
+    min-height: min-content;
+    width: 40%;
+    min-width: min-content;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+  
+}
+section.banner .banner_texto div.container-links a#link_sobre:hover{
+    background-color: #246ea7;
+    color: white;
+    text-decoration: underline;
+
+    transition: 0.1s ease-in-out;
+}
+section.banner .banner_texto div.container-links a#link_contato{
+    min-width:min-content ;
+    width: 40%;
+    height: 7vh;
+    min-height: min-content;
+
+    display: block;
+    border: 2px solid #246ea7;   
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+section.banner .banner_texto div.container-links a#link_contato:hover{
+    background-color: #246ea7;
+    
+    color: white;
+    text-decoration: underline;
+    transition: 0.1s ease-in-out;
+}
+
+
+
+section.banner .banner_img{
+    border: 5px solid brown;
+    background-color: #f5f5f5;
+    height: 100%; 
+    flex-basis: 65vw;
+    /* max-width: 1000px; */
+
+   position: relative;
+
+   /* background-image: url("https://img.freepik.com/fotos-gratis/close-up-medico-segurando-um-coracao-vermelho_23-2149191363.jpg?w=360&t=st=1703715949~exp=1703716549~hmac=5375f1f617147596746b9f4924a501366b19940b07b5bb8a3d46a797fd6cd5e5"); */
+   background-image: url("../img/banner2.png");
+   background-position-y:bottom ;
+   background-position-x: right;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   border: none;
+
+   flex-shrink: 0;
+
+ }
+ section.banner .banner_img img{
+    width: 100%;
+    height: 100%;
+    border: none;
+   
+ }
+
+/* SECAO SOBRE */
+
+
+main section.Sobre{
+    background-color: rgb(225, 225, 225);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+main section.Sobre section.Sobre__texto{
+    border: 3px solid blue;
+    background-color: #184e77;
+    color: #f5f5f5;
+    border-radius: 40px;
+    padding: 40px;
+
+    height: 60%;
+    min-height: min-content;
+    max-height: 1400px;
+
+    width: 70%;
+    min-width: min-content;
+    max-width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+main section.Sobre section.Sobre__texto h3{
+    font-size: 2.2rem;
+}
+main section.Sobre section.Sobre__texto p{
+    font-size: 1.3rem;
+
+}
+main section.Sobre section.Sobre__texto p#paragrafo_2{
+   margin-bottom: 50px;
+} 
+main section.Sobre section.Sobre__texto a{
+    border: 2px solid black;
+    background-color:#f5f5f5 ;
+    padding: 15px;
+    border-radius: 1rem;
+    color:#184e77 ;
+    font-size: 1.5rem;
+
+
+}
+main section.Sobre section.containner-butao a{
+    text-decoration: none;
+    color: black;
+}
+main section.Sobre section.containner-butao a:hover{
+    /* background-color:#246ea7 ; */
+    transform: translateY(5px);
+    transition: 0.1s all;
+    /* color: #f5f5f5; */
+    text-decoration: underline;
+    color: #184e77;
+    border:2px solid #6366f1 ;
+}
+
+/* SERVICOS */
+
+
+/* SERVICOS */
+main section.servicos{
+    border: 3px solid green;
+    height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main section.servicos h3{
+    padding-top: 10vh;
+ font-size: 2.2rem;
+
+}
+main section.servicos  section.servicos-ofertados{
+    border: 3px solid #6366f1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+    
+}
+main section.servicos>section.servicos-ofertados>div.containner-cards-servicos{
+    width: 95%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+
+}
+
+main section.servicos section.card-servico{
+    
+    border: 2px solid #184e77;
+    background-color: rgb(225, 225, 225);
+    width: 17vw;
+    min-height: min-content;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+main section.servicos section.card-servico#card-exame{
+    border-top-left-radius:1.5rem;
+    border-bottom-left-radius:1.5rem;
+}
+main section.servicos section.card-servico#card-cirugia{
+    border-top-right-radius:1.5rem ;
+    border-bottom-right-radius:1.5rem ;
+}
+
+
+
+main section.servicos section.card-servico h4{
+    color: #184e77;
+    font-size: 1.8rem;
+    max-width: 300px;
+}
+main section.servicos section.card-servico p{
+    font-size: 1.3rem;
+}
+main section.servicos section.card-servico img{
+    
+    border: 2px solid black;
+    min-width: 50px;
+    width: 2vw;
+   
+}
+main > section.servicos  section.card-servico a{
+    display: block;
+    background-color: #f5f5f5;
+    border: 2px solid black;
+
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 1rem;
+}
+main > section.servicos  section.card-servico a:hover{
+  background-color: #246ea7;
+  color: white;
+  text-decoration: underline;
+  border: 2px solid white;
+  transition: 0.1s ease-in-out;
+}
+
+
+/* SECAO CONTATOS */
+main section.Contatos{
+    border: 3px solid brown;
+     background-color:   rgb(225, 225, 225) ;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-top: 5vh;
+}
+main section.Contatos h3{
+    font-size: 2.2rem;
+    margin-bottom: 10vh;
+}
+main section.Contatos section.container-cards-contato{
+    height: 85%;
+    min-height: min-content;
+    width: 25%;
+    min-width: min-content;
+
+    background-color:#f5f5f5 ;
+    border: 3px solid #184e77;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    border-radius: 1.5rem;
+   
+}
+main section.Contatos section.container-cards-contato h3#Contatos-e-agendamento{
+    position: absolute;
+    top: 0;
+}
+
+main section.Contatos section.container-cards-contato div.card-contato{
+    border: 3px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  
+}
+main section.Contatos section.container-cards-contato div.card-contato h4{
+    font-size: calc( var(--tamanho-fonte-contato-md )-0.2rem );
+}
+main section.Contatos section.container-cards-contato div.card-contato p{
+    font-size: inherit;
+}
+
+main section.Contatos section.container-cards-contato div.card-contato img{
+    height: 2vw;
+    min-height: 40px;
+}
+
+
+
+main section.Contatos section.container-cards-contato div.card-contato div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+}
+
+main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:15px;
+}
+main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento a{
+   
+}
+
+
+
+main section.Contatos  section.google-maps{
+    background-color: #f5f5f5;
+     min-width: min-content;
+     width: 65%;
+     height: 85%;
+     padding-left: 40px;
+     padding-right: 40px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    border-radius: 1.5rem;
+    border: 3px solid #184e77;
+}
+main section.Contatos  section.google-maps iframe{
+  height: 100%;
+  width: 100%;
+}
+
+/* SECAO FAQ */
+
+main section.FAQ{
+    border: 3px solid green;
+    min-height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10vh;
+}
+main section.FAQ h3{
+    font-size: 2.2rem;
+    color: #184e77;
+
+}
+
+main section.FAQ div.containner-FAQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+
+    border: 2px solid black;
+    padding: 30px;
+  background-color: #e1e1e1;
+    
+}
+
+details{
+    min-width: min-content;
+    min-height: min-content;
+    cursor: pointer;
+    font-size: 1.2rem;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+summary{
+    padding-bottom: 15px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background-color: #f5f5f5;
+  border-bottom: 2px solid black;
+    
+}
+summary:hover{
+    color:#246ea7;
+    transition: 0.1s ease-in-out;
+}
+details{
+    font-size: 1.2rem;
+
+}
+details a{
+    font-size: inherit;
+}
+details[open] summary{
+    color: #246ea7;;
+}
+
+/* RODAPE */
+footer{
+    height: 10vh;
+    background-color: #184e77;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p{
+    font-size: 1.2rem;
+}

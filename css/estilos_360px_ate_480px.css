@@ -1,0 +1,515 @@
+:root{
+    /* HEADER */
+    --tamanho-header-span-logo-360_a_480_px:3.5rem;
+    /* BANNER TEXTO */
+    --tamanho-banner-texto-h1-360_a_480_px:3.5rem;
+    --tamanho-banner-texto-h2-360_a_480_px:2.5rem;
+    --tamanho-banner-texto-p-360_a_480_px:2.5rem;
+    
+    
+
+}
+
+@media screen  and (min-width:361px) and (max-width:480px){
+    header nav{
+        display: none;
+
+    }
+    header div.logo span{
+        font-size: var(--tamanho-header-span-logo-360_a_480_px);
+    }
+
+    header div#menu-hamburguer{
+        z-index: 3;
+
+       display: flex;
+       justify-content: center;
+       align-items: center; 
+   }
+
+
+   header nav{
+    display: none;
+    
+}
+header nav ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: #184e77;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    clip-path: circle(100px at 90% -15%);
+    /* pointer-events: none; */
+
+    transition: 0.5s ease-in-out;
+}
+.active{
+    display: block;
+}
+nav.active ul{
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+}
+
+header div#menu-hamburguer{
+     z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+
+    section.banner .banner_texto{ 
+        height: 100%;  
+        max-width: 500px;
+        margin-left: 0vw;
+        flex-basis: 100vw;  
+        padding: 15px 20px; 
+       
+     }
+     section.banner .banner_texto h1{
+        font-size: var(--tamanho-banner-texto-h1-360_a_480_px);
+        color: #246ea7;
+        font-weight: bold;
+       
+      }
+      section.banner .banner_texto h2{
+          font-size:var(--tamanho-banner-texto-h2-360_a_480_px); 
+      }
+      section.banner .banner_texto p{
+          font-size: var(--tamanho-banner-texto-p-360_a_480_px);
+      }
+
+     section.banner .banner_texto div.container-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 3px solid green;
+    }
+
+     section.banner .banner_texto div.container-links a#link_sobre{  
+        min-width:min-content ;
+        max-width: 200px;
+        margin-top: 25px;
+        width: 42vw;
+        text-align: center;
+        padding: 0.6rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    section.banner .banner_texto div.container-links a#link_contato{
+        display: block;
+        min-width:min-content ;
+        max-width: 200px;
+        width: 42vw;
+        
+        margin-top: 25px;
+        padding: 0.6rem;
+        border-radius: 1rem;
+
+        font-size: 2rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  
+     section.banner .banner_img{
+       display: none;
+    
+     }
+
+
+    main section.Sobre{
+        margin-top: 70px;
+        min-height: min-content;
+        height: auto;
+        background-color: rgb(225, 225, 225);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    main section.Sobre section.Sobre__texto{
+        height: auto;
+        width:auto;
+
+        border: 3px solid blue;
+        background-color: #184e77;       
+        border-radius: 0px;
+        padding: 0px;
+
+        color: #f5f5f5;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+    main section.Sobre section.Sobre__texto h3{
+        font-size: 3rem;
+    }
+    main section.Sobre section.Sobre__texto p{
+        font-size: 2rem;
+    }
+    main section.Sobre section.Sobre__texto a{
+        padding: 10px;
+        border-radius: 1rem;
+
+        font-size: 2em;
+       
+    }
+    main section.Sobre section.containner-butao a{
+        display: block;
+        
+        margin-top: 40px;
+        padding: 15px;
+
+        font-size: 2rem;
+    }
+
+
+
+
+    
+
+/* SERVICOS */
+main section.servicos{
+    border: 3px solid green;
+    min-height: 100vh;
+    height: min-content;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main section.servicos h3{
+    padding-top: 10vh;
+    font-size: 3rem;
+    margin-bottom: 40px;
+
+}
+main section.servicos  section.servicos-ofertados{
+    border: 3px solid #6366f1;
+    width: 100vw;
+    min-height: 100vh;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+    /* margin: 0 auto; */
+    padding-left: 2.5vw;
+}
+main section.servicos>section.servicos-ofertados>div.containner-cards-servicos{
+    width: 95%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+
+main section.servicos section.card-servico{
+    
+    border: 2px solid #184e77;
+    background-color: rgb(225, 225, 225);
+    width: 90vw;
+    min-width: min-content;
+    min-height: min-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 50px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+main section.servicos section.card-servico#card-exame{
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+main section.servicos section.card-servico#card-cirugia{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px ;
+    margin-bottom: 70px;
+}
+
+main section.servicos section.card-servico h4{
+    color: #184e77;
+    font-size: 2.8rem;
+    max-width: 300px;
+}
+main section.servicos section.card-servico p{
+    font-size: 2rem;
+}
+main section.servicos section.card-servico img{
+    
+    border: 2px solid black;
+    min-width: 50px;
+    width: 2vw;
+   
+}
+main > section.servicos  section.card-servico a{
+    display: block;
+    background-color: #f5f5f5;
+    border: 2px solid black;
+
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 1rem;
+}
+main > section.servicos  section.card-servico a:hover{
+  background-color: #246ea7;
+  color: white;
+  text-decoration: underline;
+  border: 2px solid white;
+  transition: 0.1s ease-in-out;
+}
+
+
+/* SECAO CONTATOS */
+main section.Contatos{
+    border: 3px solid brown;
+     background-color:   rgb(225, 225, 225) ;
+    width: 100vw;
+    height: min-content;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-top: 5vh;
+}
+main section.Contatos h3{
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+main section.Contatos section.container-cards-contato{
+    height: 85%;
+    min-height: min-content;
+    width: 35%;
+    min-width: min-content;
+
+    background-color:#f5f5f5 ;
+    border: 3px solid #184e77;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    border-radius: 1.5rem;
+   
+}
+main section.Contatos section.container-cards-contato h3#Contatos-e-agendamento{
+    position: static;
+}
+
+main section.Contatos section.container-cards-contato div.card-contato{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+     
+    border: 3px solid yellow;
+    padding-left: 15px;
+
+    width: 90vw;
+  
+}
+main section.Contatos section.container-cards-contato div.card-contato h4{
+    font-size: 2.2rem;
+}
+main section.Contatos section.container-cards-contato div.card-contato p{
+    font-size: 2.2rem;
+}
+
+main section.Contatos section.container-cards-contato div.card-contato img{
+    height: 2vw;
+    min-height: 40px;
+}
+
+
+
+main section.Contatos section.container-cards-contato div.card-contato div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+
+       
+}
+
+main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap:15px;
+
+
+   font-size: 2.2rem;
+
+   padding-left: 15px;
+}
+main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento a{
+   
+ 
+    font-size: 2.2rem;
+ }
+
+main section.Contatos  section.google-maps{
+    background-color: #f5f5f5;
+     width: 100%;
+     height: 80vh;
+     padding-left: 40px;
+     padding-right: 40px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    border-radius: 1.5rem;
+    border: 3px solid #184e77;
+}
+main section.Contatos  section.google-maps iframe{
+   width: 100%;
+   height: 100%;
+}
+
+
+
+
+
+/* SECAO FAQ */
+
+main section.FAQ{
+    border: 3px solid green;
+    min-height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10vh;
+}
+main section.FAQ h3{
+    font-size: 3rem;
+    color: #184e77;
+    text-align: center;
+}
+
+main section.FAQ div.containner-FAQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+
+    border: 2px solid black;
+    padding:30px 0px;
+   background-color: #e1e1e1;
+    
+}
+
+details{
+    min-width: min-content;
+    width: 100%;
+    width: 100%;
+    min-height: min-content;
+    cursor: pointer;
+    font-size: 2.5rem;
+    background-color: #f5f5f5;
+    padding:20px 5px;
+}
+summary{
+    width: 100vw;
+    padding-bottom: 15px;
+    
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid black;
+    
+}
+summary:hover{
+    color:#246ea7;
+    transition: 0.1s ease-in-out;
+
+}
+details{
+    font-size: 2rem;
+   
+    padding-right: 50px;
+}
+details a{
+    font-size: inherit;
+}
+details[open] summary{
+    color: #246ea7;;
+}
+
+/* RODAPE */
+footer{
+    height: 10vh;
+    background-color: #184e77;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+    
+}
