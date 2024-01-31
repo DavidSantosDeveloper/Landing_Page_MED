@@ -1,0 +1,233 @@
+:root{
+    /* HEADER */
+    --tamanho-header-span-logo-1921_a_3840_px:7.5rem;
+    /* BANNER TEXTO */
+    --tamanho-banner-texto-h1-1921_a_3840_px:12rem;
+    --tamanho-banner-texto-h2-1921_a_3840px:2.8rem;
+    --tamanho-banner-texto-p-1921_a_3840_px:2.5rem;
+    
+}
+
+@media screen  and (min-width:1921px) and (max-width:3840px){
+    /* CABECALHO */
+    header{
+        justify-content: center;
+        gap: 150px;
+    }
+    header nav ul li a {
+        font-size: 3.5rem;
+    }
+    header div.logo span{
+        font-size: var(--tamanho-header-span-logo-1921_a_3840_px);
+    }
+
+    /* BANNER  */
+    section.banner .banner_img{
+        max-width: 1500px;
+    }
+    section.banner .banner_texto h1{
+        font-size:var(--tamanho-banner-texto-h1-1921_a_3840_px) ;
+    }
+    section.banner .banner_texto h2 {
+       font-size: var(--tamanho-banner-texto-h2-1921_a_3840px);
+    }
+    section.banner .banner_texto p {
+        font-size: 2.6rem;
+    }
+
+    section.banner .banner_texto div.container-links a#link_sobre {
+        font-size: 2.6rem;
+    }
+    section.banner .banner_texto div.container-links a#link_contato {
+        font-size: 2.6rem;
+    }
+    main section.Sobre{
+        min-height: 100vh;
+        height:auto;
+        background-color: rgb(225, 225, 225);
+
+       
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    main section.Sobre section.Sobre__texto{
+        height: 60%;
+        width: 70%;
+        max-width: 1800px;
+        max-height: 90vh;
+
+        border: 3px solid blue;
+        background-color: #184e77;       
+        border-radius: 100px;
+    
+        color: #f5f5f5;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 50px 80px;
+    }
+    main section.Sobre section.Sobre__texto h3{
+        font-size: 5rem;
+    }
+    main section.Sobre section.Sobre__texto p{
+        font-size: 3rem;
+    }
+    main section.Sobre section.Sobre__texto a{
+        padding: 10px;
+        border-radius: 1rem;
+
+        font-size: 3em;
+       
+    }
+    main section.Sobre section.containner-butao a{
+        display: block;
+        
+        margin-top: 40px;
+        padding: 15px;
+
+        font-size: 3rem;
+    }
+
+
+    
+        
+
+    /* SERVICOS */
+    main section.servicos{
+        border: 3px solid green;
+        min-height: 100vh;
+        height: auto;
+        min-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main section.servicos h3{
+        padding-top: 10vh;
+        font-size: 5rem;
+        margin-bottom: 40px;
+
+    }
+    
+    main section.servicos section.card-servico{
+        max-height: 700px;
+    }
+    main section.servicos section.card-servico h4 {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size: 3.5rem;
+    }
+    main section.servicos section.card-servico p {
+        margin-top: 0px;
+        font-size: 2.2rem;
+    }
+    main section.servicos section.card-servico img {
+        border: 2px solid black;
+        min-width: 50px;
+        width: 4.5vw;
+    }
+    main > section.servicos section.card-servico a {
+        margin-bottom: 50px;
+
+        font-size: 2.2rem; 
+    }
+    main section.servicos section.card-servico {
+       justify-content: space-between;
+       gap: 0px;
+    }
+
+    main section.servicos section.card-servico#card-odontologia p{
+        /* margin-bottom: 60px; */
+    }
+    main section.servicos section.card-servico#card-odontologia img{
+        margin-bottom: 50px;
+    }
+
+
+    /* SECAO CONTATOS */
+   
+    main section.Contatos section.container-cards-contato{
+        max-width: 800px;
+        max-height: 900px;
+    }
+    main section.Contatos section.container-cards-contato h3#Contatos-e-agendamento{
+        font-size: 3.5rem;
+    }
+    main section.Contatos section.container-cards-contato div.card-contato img {
+        height: 3vw;
+        min-height: 40px;
+    }
+    main section.Contatos section.container-cards-contato div.card-contato h4 {
+        font-size:2.5rem;
+    }
+    main section.Contatos section.container-cards-contato div.card-contato p {
+        font-size: 2.5rem;
+    }
+    main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento a {
+        font-size: 2.5rem;
+    }
+
+    main section.Contatos section.google-maps{
+        max-width: 1500px;
+        max-height: 900px;
+    }
+    main section.Contatos section.google-maps h3{
+       font-size: 3.5rem;
+    }
+
+
+
+    /* SECAO FAQ */
+    main section.FAQ div.containner-FAQ {
+        width: 50vw; 
+        max-width: 1500px;
+    }
+    main section.FAQ h3 {
+        font-size: 5rem;
+        color: #184e77;
+    }
+    details summary{
+        font-size: 2.5rem;
+    }
+    details[open]{
+        font-size: 2rem;
+    }
+
+    /* RODAPE */
+    footer{
+        height: 10vh;
+        background-color: #184e77;
+        color: white;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    footer p{
+        font-size: 3.5rem;
+    }
+
+
+    
+    
+}
+
+
+
+
+   
+
+
+
+
+    
