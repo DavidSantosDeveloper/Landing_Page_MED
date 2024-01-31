@@ -353,7 +353,7 @@ main section.servicos section.card-servico{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 
 }
@@ -371,7 +371,9 @@ main section.servicos section.card-servico#card-cirugia{
 main section.servicos section.card-servico h4{
     color: #184e77;
     font-size: 1.8rem;
+
     max-width: 300px;
+    margin-top: 50px;
 }
 main section.servicos section.card-servico p{
     font-size: 1.3rem;
@@ -387,11 +389,12 @@ main > section.servicos  section.card-servico a{
     display: block;
     background-color: #f5f5f5;
     border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 50px;
 
     font-size: 1.3rem;
     color: black;
     text-decoration: none;
-    padding: 15px;
     border-radius: 1rem;
 }
 main > section.servicos  section.card-servico a:hover{
@@ -401,6 +404,8 @@ main > section.servicos  section.card-servico a:hover{
   border: 2px solid white;
   transition: 0.1s ease-in-out;
 }
+
+
 
 
 /* SECAO CONTATOS */
