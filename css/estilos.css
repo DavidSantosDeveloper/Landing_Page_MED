@@ -148,7 +148,8 @@ section.banner .banner_texto div.container-links a#link_sobre{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #246ea7;   
+     border: 2px solid rgb(35, 35, 35);   
+    background-color: #246ea7;
     min-width:min-content ;
     /* max-width: 200px; */
     height: 7vh;
@@ -159,18 +160,22 @@ section.banner .banner_texto div.container-links a#link_sobre{
     padding: 0.5rem;
     border-radius: 1rem;
 
-    color: black;
+    color:#f5f5f5;
     text-decoration: none;
     font-size: 1.5rem;
 
   
 }
 section.banner .banner_texto div.container-links a#link_sobre:hover{
-    background-color: #246ea7;
-    color: white;
+    background-color: #fff; 
+    border: 0px solid #246ea7; 
+    color: #246ea7;
+    font-weight: bold;
     text-decoration: underline;
 
-    transition: 0.1s ease-in-out;
+    outline: 3px solid #246ea7;
+
+    transition: 0.4s ease-in-out;
 }
 section.banner .banner_texto div.container-links a#link_contato{
     min-width:min-content ;
@@ -184,22 +189,28 @@ section.banner .banner_texto div.container-links a#link_contato{
     padding: 0.5rem;
     border-radius: 1rem;
 
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.5rem;
     
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: 2px solid rgb(35, 35, 35);   
+    background-color: #246ea7;
  
 
 }
 section.banner .banner_texto div.container-links a#link_contato:hover{
-    background-color: #246ea7;
-    
-    color: white;
+    background-color: #fff; 
+    border: 0px solid #246ea7; 
+    color: #246ea7;
+    font-weight: bold;
     text-decoration: underline;
-    transition: 0.1s ease-in-out;
+    
+    outline: 3px solid #246ea7;
+    transition: 0.4s ease-in-out;
 }
 
 
