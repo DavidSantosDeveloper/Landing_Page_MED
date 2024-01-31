@@ -84,10 +84,6 @@ header div#menu-hamburguer img{
     height: 80%;
 }
 
-
-.menu-hamburguer-ativo{
-    
-}
 .menu-hamburguer-fechado{
     display: none;
 }
@@ -485,11 +481,6 @@ main section.Contatos section.container-cards-contato div.card-contato.link-site
    align-items: center;
    gap:15px;
 }
-main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento a{
-   
-}
-
-
 
 main section.Contatos  section.google-maps{
     background-color: #f5f5f5;

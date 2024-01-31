@@ -1,14 +1,13 @@
 :root{
     /* HEADER */
-    --tamanho-header-span-logo-1921_a_3840_px:7.5rem;
+    --tamanho-header-span-logo-4k:7.5rem;
     /* BANNER TEXTO */
-    --tamanho-banner-texto-h1-1921_a_3840_px:12rem;
-    --tamanho-banner-texto-h2-1921_a_3840px:2.8rem;
-    --tamanho-banner-texto-p-1921_a_3840_px:2.5rem;
-    
+    --tamanho-banner-texto-h1-4k:20rem;
+    --tamanho-banner-texto-h2-4k:4.2rem;
+    --tamanho-banner-texto-p-4k:3.6rem; 
 }
 
-@media screen  and (min-width:1921px) and (max-width:3839px){
+@media screen  and (min-width:3840px){
     /* CABECALHO */
     header{
         justify-content: center;
@@ -18,29 +17,71 @@
         font-size: 3.5rem;
     }
     header div.logo span{
-        font-size: var(--tamanho-header-span-logo-1921_a_3840_px);
+        font-size: var(--tamanho-header-span-logo-4k);
     }
 
     /* BANNER  */
+    section.banner .banner_texto {
+        height: 100%;
+        max-width: 1400px;
+        /* background-color: rgb(16, 130, 244); */
+        color: black;
+        flex-basis: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid blueviolet;
+        padding-left: 20vh;
+    }
+
+
+
+
     section.banner .banner_img{
-        max-width: 1500px;
+        max-width: 2500px;
+        flex-basis: 65vw;
+
+        border: 5px solid brown;
+        background-color: #f5f5f5;
+        height: 100%;
+        flex-basis: 65vw;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        flex-shrink: 0;
     }
     section.banner .banner_texto h1{
-        font-size:var(--tamanho-banner-texto-h1-1921_a_3840_px) ;
+        font-size:var(--tamanho-banner-texto-h1-4k) ;
     }
     section.banner .banner_texto h2 {
-       font-size: var(--tamanho-banner-texto-h2-1921_a_3840px);
+       font-size: var(--tamanho-banner-texto-h2-4k);
     }
     section.banner .banner_texto p {
-        font-size: 2.6rem;
+        font-size: var(--tamanho-banner-texto-p-4k);
+    }
+    section.banner .banner_texto div.container-links{
+        gap: 100px;
+    }
+    section.banner .banner_texto div.container-links a#link_sobre{
+        border: 15px solid #246ea7;
+        border-radius: 4rem;
+    }
+    section.banner .banner_texto div.container-links a#link_contato{
+        border: 15px solid #246ea7;
+        border-radius: 4rem;
     }
 
     section.banner .banner_texto div.container-links a#link_sobre {
-        font-size: 2.6rem;
+        font-size: var(--tamanho-banner-texto-p-4k);
     }
     section.banner .banner_texto div.container-links a#link_contato {
-        font-size: 2.6rem;
+        font-size: var(--tamanho-banner-texto-p-4k);
     }
+
+
     main section.Sobre{
         min-height: 100vh;
         height:auto;
@@ -62,7 +103,7 @@
 
         border: 3px solid blue;
         background-color: #184e77;       
-        border-radius: 100px;
+        border-radius: 150px;
     
         color: #f5f5f5;
 
@@ -74,25 +115,26 @@
         padding: 50px 80px;
     }
     main section.Sobre section.Sobre__texto h3{
-        font-size: 5rem;
+        font-size: 10rem;
     }
     main section.Sobre section.Sobre__texto p{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     main section.Sobre section.Sobre__texto a{
         padding: 10px;
         border-radius: 1rem;
 
-        font-size: 3em;
+        font-size: 4rem;
        
     }
     main section.Sobre section.containner-butao a{
         display: block;
         
         margin-top: 40px;
-        padding: 15px;
+        padding: 40px;
+        border-radius: 100px;
 
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
 
@@ -113,22 +155,25 @@
     }
     main section.servicos h3{
         padding-top: 10vh;
-        font-size: 5rem;
+        font-size: 8rem;
         margin-bottom: 40px;
 
     }
     
     main section.servicos section.card-servico{
-        max-height: 700px;
+        max-height: 1200px;
     }
     main section.servicos section.card-servico h4 {
+        margin: 0px;
         margin-top: 50px;
         margin-bottom: 0px;
-        font-size: 3.5rem;
+        font-size: 5rem;
+      
+       
     }
     main section.servicos section.card-servico p {
         margin-top: 0px;
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
     main section.servicos section.card-servico img {
         border: 2px solid black;
@@ -137,23 +182,47 @@
     }
     main > section.servicos section.card-servico a {
         margin-bottom: 50px;
+        padding: 40px;
+        border-radius: 20px;
 
-        font-size: 2.2rem; 
+        font-size: 3rem; 
     }
     main section.servicos section.card-servico {
        justify-content: space-between;
        gap: 0px;
+       
+       max-width: 1000px;
+       text-align: center;
+    }
+
+    main section.servicos section.card-servico#card-exame {
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+    }
+    main section.servicos section.card-servico#card-cirugia {
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    main section.servicos section.card-servico#card-odontologia{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    main section.servicos section.card-servico#card-odontologia h4{
+    
     }
     main section.servicos section.card-servico#card-odontologia img{
         margin-bottom: 50px;
     }
 
 
+
     /* SECAO CONTATOS */
    
     main section.Contatos section.container-cards-contato{
         max-width: 800px;
-        max-height: 900px;
+        max-height: 1400px;
     }
     main section.Contatos section.container-cards-contato h3#Contatos-e-agendamento{
         font-size: 3.5rem;
@@ -174,7 +243,7 @@
 
     main section.Contatos section.google-maps{
         max-width: 1500px;
-        max-height: 900px;
+        max-height: 1400px;
     }
     main section.Contatos section.google-maps h3{
        font-size: 3.5rem;
@@ -185,17 +254,17 @@
     /* SECAO FAQ */
     main section.FAQ div.containner-FAQ {
         width: 50vw; 
-        max-width: 1500px;
+        max-width: 2000px;
     }
     main section.FAQ h3 {
-        font-size: 5rem;
+        font-size: 8rem;
         color: #184e77;
     }
     details summary{
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
     details[open]{
-        font-size: 2rem;
+        font-size: 3.7rem;
     }
 
     /* RODAPE */
