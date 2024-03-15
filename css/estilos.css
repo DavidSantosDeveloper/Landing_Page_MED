@@ -31,7 +31,7 @@ header{
     z-index: 999;
 }
 header div.logo{
-    border: 2px solid blue; 
+    /* border: 2px solid blue;  */
 
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ header div.logo img{
 }
 
 header nav{
-    border: 3px solid rgb(255, 219, 12);
+    /* border: 3px solid rgb(255, 219, 12); */
     width: 70vw;
     color: white;
 }
@@ -67,6 +67,19 @@ header nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    transition: 0.4s ease-in-out;
+}
+header nav ul li a:hover{
+    background-color: #fff; 
+    border: 0px solid #246ea7; 
+    color: #246ea7;
+    font-weight: bold;
+    text-decoration: underline;
+    
+   padding-block: 5px;
+   padding-inline: 8px;
+   border-radius: 5px;
+    transition: 0.4s ease-in-out;
 }
 header nav ul li a img{
     height: 5vh;
@@ -115,7 +128,7 @@ section.banner .banner_texto{
    justify-content: center;
    align-items: center;
    
- border: 3px solid blueviolet;
+ /* border: 3px solid blueviolet; */
   padding-left: 5vh;
 
 }
@@ -136,7 +149,7 @@ section.banner .banner_texto div.container-links{
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 
     margin-top: 40px;
 
@@ -256,7 +269,7 @@ main section.Sobre{
     
 }
 main section.Sobre section.Sobre__texto{
-    border: 3px solid blue;
+    border: 3px solid black;
     background-color: #184e77;
     color: #f5f5f5;
     border-radius: 40px;
@@ -315,7 +328,7 @@ main section.Sobre section.containner-butao a:hover{
 
 /* SERVICOS */
 main section.servicos{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     height: 100vh;
     min-width: 100vw;
 
@@ -330,7 +343,7 @@ main section.servicos h3{
 
 }
 main section.servicos  section.servicos-ofertados{
-    border: 3px solid #6366f1;
+    /* border: 3px solid #6366f1; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -421,7 +434,7 @@ main > section.servicos  section.card-servico a:hover{
 
 /* SECAO CONTATOS */
 main section.Contatos{
-    border: 3px solid brown;
+    /* border: 3px solid brown; */
      background-color:   rgb(225, 225, 225) ;
     width: 100vw;
     height: 100vh;
@@ -438,9 +451,9 @@ main section.Contatos h3{
     margin-bottom: 10vh;
 }
 main section.Contatos section.container-cards-contato{
-    height: 85%;
+    height: 93%;
     min-height: min-content;
-    width: 25%;
+    width: 27%;
     min-width: min-content;
 
     background-color:#f5f5f5 ;
@@ -454,15 +467,34 @@ main section.Contatos section.container-cards-contato{
     gap: 40px;
 
     border-radius: 1.5rem;
+    border-top: 20px solid #184e77;
+    border-left: 10px solid #184e77;
+    border-right: 10px solid #184e77;
+    border-bottom: 20px solid #184e77;
+    padding-inline: 20px;
    
 }
 main section.Contatos section.container-cards-contato h3#Contatos-e-agendamento{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+main section.Contatos section.container-cards-contato div.grupo-cards {
+    display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+main section.Contatos section.container-cards-contato div.grupo-cards div.card-contato{
+    display: flex;
+    justify-content: flex-start;
+}
 main section.Contatos section.container-cards-contato div.card-contato{
-    border: 3px solid yellow;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -471,15 +503,18 @@ main section.Contatos section.container-cards-contato div.card-contato{
 }
 main section.Contatos section.container-cards-contato div.card-contato h4{
     font-size: calc( var(--tamanho-fonte-contato-md )-0.2rem );
+    color: inherit;
 }
 main section.Contatos section.container-cards-contato div.card-contato p{
     font-size: inherit;
+    color: inherit;
 }
 
 main section.Contatos section.container-cards-contato div.card-contato img{
     height: 2vw;
     min-height: 40px;
 }
+
 
 
 
@@ -494,10 +529,25 @@ main section.Contatos section.container-cards-contato div.card-contato.link-site
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items: flex-start;
    gap:15px;
 }
+main section.Contatos section.container-cards-contato div.card-contato.link-site-agendamento a{
+    align-self: center;
+ }
+ main section.Contatos section.container-cards-contato div.card-contato:hover{
+    background-color: #246ea7;
+} 
+main section.Contatos section.container-cards-contato div.card-contato  div:hover{
+    color: white ;
+ }
+main section.Contatos section.container-cards-contato div.card-contato  p:hover{
+   color: inherit ;
 
+}
+main section.Contatos section.container-cards-contato div.card-contato div h4:hover{
+    color: inherit;
+ }
 main section.Contatos  section.google-maps{
     background-color: #f5f5f5;
      min-width: min-content;
@@ -513,6 +563,9 @@ main section.Contatos  section.google-maps{
     border-radius: 1.5rem;
     border: 3px solid #184e77;
 }
+main section.Contatos  section.google-maps h3{
+    margin-top: 40px;
+}
 main section.Contatos  section.google-maps iframe{
   height: 100%;
   width: 100%;
@@ -521,7 +574,7 @@ main section.Contatos  section.google-maps iframe{
 /* SECAO FAQ */
 
 main section.FAQ{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     min-height: 90vh;
     width: 100vw;
 

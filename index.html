@@ -129,32 +129,36 @@
 
                     <section class="container-cards-contato">
                         <h3 id="Contatos-e-agendamento">Contato e agendamentos</h3>
-                        <div class="card-contato">
-                            <div>
-                                <img src="img/telefone.png" alt="">
-                                <h4>Telefone:</h4>
+
+                        <div class="grupo-cards" id="grupo-cards">
+                            <div class="card-contato" id="card-contato-telefone">
+                                <div >
+                                    <img src="img/telefone.png" alt="" id="icone-telefone">
+                                    <h4 id="titulo-telefone">Telefone:</h4>
+                                </div>
+                                
+                                <p id="numero-telefone">(86) 3xxx-xxxx</p>
                             </div>
-                            
-                            <p>(86) 3xxx-xxxx</p>
-                        </div>
-                        <div class="card-contato">
-                            <div>
-                                <img src="img/whatsapp.png" alt="">
-                                <h4>Whatsapp Oficial:</h4>
+                            <div class="card-contato" id="card-contato-whatsapp">
+                                <div>
+                                    <img src="img/whatsapp.png" alt="" id="icone-whatsapp">
+                                    <h4 id="titulo-whatsapp">Whatsapp Oficial:</h4>
+                                </div>
+                               
+                                <p id="numero-whatsapp">(86) 9 3xxx-xxxx</p>
                             </div>
                            
-                            <p>(86) 9 3xxx-xxxx</p>
-                        </div>
-                       
-                        <div class="card-contato link-site-agendamento">
-                            <div>
-                                <img src="img/ethernet_3892809.png" alt="">
-                                <h4>Site para agendamentos:</h4>
+                            <div class="card-contato link-site-agendamento" id="card-contato-agendamento">
+                                <div>
+                                    <img src="img/ethernet_3892809.png" alt="" id="icone-agendamento">
+                                    <h4 id="titulo-agendamento">Site para agendamentos:</h4>
+                                </div>
+                                
+                                <a href="" id="link-agendamento">Link do site de agendamentos</a>
                             </div>
-                            
-                            <a href="">Link do site</a>
+    
                         </div>
-
+                        
                         
                     </section>
                  
@@ -205,7 +209,7 @@
 
     <script src="js/build/script.js"></script>
     <script>
-        document.getElementById("info").innerText="height:"+window.innerHeight+ "    width:"+window.innerWidth
+        //document.getElementById("info").innerText="height:"+window.innerHeight+ "    width:"+window.innerWidth
     </script>
    
 </body>
